@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#pic { width: 220px; }
+#music { width: 200px; }
+#mv { width: 220px; }
+
+body { width: 80%; }
+nav ul li { background: #F60; }
+nav ul li a { color: #FFF; }

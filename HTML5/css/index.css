@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Some Public Style */
+.clear { clear: both; }
+.verticalAlign { text-align: center; }
+
+/* Content Style */
+#pic { width: 640px; }
+#music { width: 500px; }
+#mv { width: 640px; }
+
+#SQLresult td { padding: 5px 10px; }
+#SQLresult tr.header td { border-bottom: 2px solid #F90; }
+
+/* Main Style */
+body {
+	width: 50%;
+	margin: 25px auto;
+	font-size: 1em;
+	font-family: Lato, Helvetica, sans-serif;
+	color: #333;
+}
+hr {
+	border: 1px solid #999;
+	margin: 10px 0;
+}
+
+/* Page Header */
+header {
+	font-size: 1.5em;
+	color: #F60;
+	font-weight: bold;
+	border-bottom: 3px solid #333;
+	margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+nav {
+	background: #FC9;
+	padding: 5px 10px;
+	margin: 5px 0;
+	border-radius: 5px;
+}
+nav ul { list-style: none; padding: 0; margin: 0; }
+nav ul li {
+	float: left;
+	display: block;
+	padding: 2px 5px;
+	margin: 2px 2px;
+	border-radius: 5px;
+	border: 1px solid #F60;
+	background: #FC0;
+}
+nav ul li.hover { background: #F60; cursor: pointer; }
+nav ul li a { text-decoration: none; color: #000; }
+nav ul li.hover a { color: #FFF; }
+
+/* Information bar */
+footer {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #666;
+	text-align: center;
+	color: #999;
+	font-size: .8em;
+}
+footer a { color: #666; }
+footer a:hover { color: #F90; }
+
+/* Content Area */
+section { margin: 30px 0; }
+article {
+	padding: 15px;
+	margin: 10px 0;
+	background: #DDD;
+	border-radius: 5px;
+}
+article div.title {
+	font-size: 1.2em;
+	font-style: italic;
+	margin: 0 0 10px 0;
+	color: #000;
+}
+article div.content a { color: #000; }
+section.black article { background: #333; color: #CCC; }
+section.black article div.title { color: #FFF; }
+section.black article div.content a { color: #FFF; }
+
+/* Input form */
+input[type="text"], input[type="tel"], input[type="number"], input[type="email"] {
+	padding: 5px 10px;
+	background: #FFC;
+	border: 1px solid #F90;
+	border-radius: 5px;
+}
+input[type="text"].focus, input[type="tel"].focus, input[type="number"].focus, input[type="email"].focus { font-size: 1.5em; }
+
+/* Button */
+button {
+	padding: 5px 15px;
+	background: #FC9;
+	border: 1px solid #F60;
+	border-radius: 3px;
+	font-size:.9em;
+	cursor: pointer;
+}
+button.clicked { background: #F60; color: #FFF; }

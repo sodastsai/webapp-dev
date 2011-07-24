@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Layout Info for Mobile Webkit -->
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>HTML5 and jQuery</title>
+    <!-- jQuery 1.4.4 -->
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <!-- WebFont -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:regular,bold,bolditalic,italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <!-- Default CSS -->
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+	<!-- Layout Info for Mobile Webkit -->
+    <link href="css/mobile.css" type="text/css" rel="stylesheet" media="only screen and (min-device-width: 320px) and (max-device-width: 480px)">
+</head>
+<body>
+	<!-- Page Title -->
+    <header>HTML5 and jQuery Demo/Test</header>
+    <!-- Navigation Bar -->
+    <nav>
+    	<ul>
+        	<li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+            <li><a href="http://dev.w3.org/html5/spec/" target="_blank">HTML5</a></li>
+            <li><a href="http://www.w3.org/Style/CSS/" target="_blank">CSS3</a></li>
+            <li><a href="http://www.aptana.com/" target="_blank">Apatana Studio</a></li>
+            <li><a href="http://html5demos.com/" target="_blank">HTML5 Demos</a></li>
+            <li><a href="http://mislav.uniqpath.com/2010/04/targeted-css/" target="_blank">CSS Media</a></li>
+            <li><a href="http://caniuse.com/" target="_blank">HTML5 Support</a></li>
+            <!-- CSS Flaot Clear -->
+            <div class="clear"></div>
+        </ul>
+    </nav>
+    <!-- Content for jQuery -->
+    <section id="jQuery">
+    	<!-- User/Client Detection -->
+    	<article id="envDetection">
+        	<div class="title">Environment Detect</div>
+            <div class="content">You can use <code>navigator</code> object in javascript to get user/client information.</div>
+        </article>
+        <!-- jQuery Event and Input emphasize -->
+    	<article id="jQEvent">
+        	<div class="title">jQuery Event</div>
+            <div class="content">
+            	<table>
+                	<tr><td>Name</td><td><input type="text" name="name" size="5"></td></tr>
+                    <tr><td>Phone</td><td><input type="tel" name="phone" size="10"></td></tr>
+                </table>
+            </div>
+        </article>
+    </section>
+    <!-- HTML5 -->
+    <section id="html5Support" class="black">
+    	<article>
+        	<div class="title">Check Browser Compability</div>
+            <div class="content">
+            	You can check from <a href="http://caniuse.com/" target="_blank">When Can I Use</a>
+            </div>
+        </article>
+    </section>
+    <!-- Content for HTML5 Multimedia -->
+    <section id="multimedia">
+    	<!-- Image -->
+    	<article>
+        	<div class="title">Img Tag</div>
+            <div class="content verticalAlign">
+            	<img id="pic">
+            </div>
+        </article>
+        <!-- Audio -->
+        <article>
+        	<div class="title">Audio Tag</div>
+            <div class="content verticalAlign">
+            	<p>Atlantic - Keane - Under The Iron Sea</p>
+                <audio controls="controls" id="music">
+                	<source src="media/Keane.m4a">
+                    <!-- Unsupported Hint -->
+                    Your browser could not support HTML5.
+                </audio>
+            </div>
+        </article>
+        <!-- Video -->
+        <article>
+        	<div class="title">Video Tag</div>
+            <div class="content verticalAlign">
+            	<p>狂熱 - 蘇打綠 - 夏/狂熱</p>
+                <video src="media/sodagreen.m4v" controls="controls" id="mv">
+                your browser does not support the video tag
+                </video>
+            </div>
+        </article>
+    </section>
+    <!-- Content for HTML5 -->
+    <section id="html5" class="black">
+    	<!-- WebFont -->
+        <article id="html5WebFont">
+        	<div class="title">HTML5 Web Font</div>
+            <div class="content">
+            	Following is some examples of HTML5 <a href="http://code.google.com/webfonts" target="_blank">Google WebFont</a>.<br>
+            	<span style="font-family: Raleway, sans; font-size: 2.5em; color:#FFF;">This text uses the Different Font!</span><br>
+                <span style="font-family: 'Yanone Kaffeesatz', sans; font-size: 1.5em; color: #F60;">This text uses another font.</span>
+            </div>
+        </article>
+        <!-- GeoLocation API -->
+    	<article id="html5GeoLocation">
+        	<div class="title">HTML5 GeoLocation</div>
+            <div class="content">
+            	You can find reference from <a href="http://dev.w3.org/geo/api/spec-source.html" target="_blank">W3C Geolocation API Specification</a><br><br>
+                <div id="geoLocationMsg">Checking...</div>
+                <div id="coord">Your coordinate is: (<span id="lat">0</span>,<span id="lon">0</span>)</div>
+                <div id="addr">Your address is: <span>...</span></div>
+            </div>
+        </article>
+        <!-- WebStorage -->
+        <article id="html5WebStorage">
+        	<div class="title">HTML5 WebStorage (Local Storage)</div>
+            <div class="content">
+            	You can find reference from <a href="http://dev.w3.org/html5/webstorage/" target="_blank">W3C Web Storage</a><br><br>
+            	The Local Storage has <span id="lsCount">0 key</span> now.<br>
+            	<button id="clearLS">Clear All Local Storage</button>
+                <hr>
+            	<span id="visitTS">Updating...</span><br>
+            	<button id="updateTS">Update Visit Timestamp</button><br>
+                <hr>
+                <span id="inputData">Updating...</span><br>
+                <label>Email <input id="inputLS" type="email"></label>
+            </div>
+        </article>
+        <!-- Database -->
+        <article id="html5Database">
+        	<div class="title">Web SQL Database</div>
+            <div class="content">
+            	<p>
+            	The database in HTML5 is still a problem currently.<br>
+                The WebSQL Database is supported by Safari, Chrome, and Opera. But Firefox and IE is not support this.<br>
+                The another one called IndexedDB will be supported by Firefox and Chrome in the future. (There's no browser support IndexedDB currently)<br>
+                </p>
+                <p>
+                An important news is that W3C has announced that they will no longer maintain WebSQL in the future, but we can not sure wheather Safari and IE will support IndexedDB or not.
+                Currently, you can only use WebSQL for offline database. But this database is not supported by Firefox and IE.
+                </p>
+                <a href="http://www.w3.org/TR/webdatabase/" target="_blank">Web SQL Database</a> <span style="font-style: italic;">(Supported by Safari, Chrome, and Opera)</span><br>
+                <a href="http://www.w3.org/TR/IndexedDB/" target="_blank">Indexed DB API</a> <span style="font-style: italic;">(No browsers support currently. Firefox and IE will do in the future)</span><br>
+                <hr>
+                SQL status: <span id="webSQLHandler"></span><br>
+                <form id="dbForm" action="javascript:void()" method="post">
+                	<table>
+                    	<tr><td>Name</td><td><input type="text" name="name" size="5"></td></tr>
+                        <tr><td>Age</td><td><input type="number" name="age" size="3"></td></tr>
+                        <tr><td>Phone</td><td><input type="tel" name="phone" size="11"></td></tr>
+                        <tr><td colspan="2"><label><input type="checkbox" name="privacy"> I know this is a private info.</label></td></tr>
+                        <tr><td colspan="2"><button id="addToDB">Add to Database</button></td></tr>
+                    </table>
+                </form>
+                <button onClick="readDB(1)">Show First key</button><br>
+                SQL Result: <span id="webSQLResult"></span>
+                <table id="SQLresult" cellpadding="0" cellspacing="0" border="0"></table>
+            </div>
+        </article>
+    </section>
+    <footer>
+    	Made and Designed By <a href="http://about.me/sodastsai" target="_blank">sodas</a>@
+    	<a href="http://www.ntumobile.org/" target="_blank">NTU CSIE Mobile & HCI Research Lab</a> &copy; 2010
+    </footer>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">initDB(); loadDB();</script>
+</body>
+</html>
