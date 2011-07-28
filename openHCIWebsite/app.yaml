@@ -1,0 +1,64 @@
+application: ntu-openhci
+version: 2
+runtime: python
+api_version: 1
+
+handlers:
+# Homepage
+- url: /
+  script: Root.py
+  
+# Pages
+- url: /about/
+  script: About.py
+- url: /goals/
+  script: IntroAndGoals.py
+- url: /program/
+  script: Program.py
+- url: /registration/
+  script: Registration.py
+- url: /intro/
+  script: IntroAndGoals.py
+- url: /passport/
+  script: Passport.py
+- url: /introAndGoals/
+  script: IntroAndGoals.py
+- url: /final/
+  script: Final.py
+
+# CSS
+- url: /css
+  static_dir: css
+  
+# JavaScript
+- url: /js
+  static_dir: js
+  
+# Images
+- url: /images
+  static_dir: images
+
+# Files
+- url: /files/
+  static_dir: files
+
+# HTML5 Cache manifest
+#- url: /manifest/(mobile|)cache.manifest
+#  script: cachemanifest/CacheManifest.py
+
+# Mobile
+- url: /m/
+  script: mobile/Mobile.py
+  
+# favicon.ico
+- url: /favicon.ico
+  static_files: images/favicon.ico
+  upload: images/favicon.ico
+  
+# Broken Link Report
+- url: /brokenLink/
+  script: contact/BrokenLink.py
+
+# Not found
+- url: /.*
+  script: NotFound.py
